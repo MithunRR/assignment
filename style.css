@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.floating-form {
+    width: 300px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    background-color: rgb(255, 233, 193);
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.floating-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.floating-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.floating-form button {
+    background-color: rgb(252, 186, 62);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+}
+
+.cats select {
+    border: none;
+    color: white;
+    background: black;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+}
+
+.heading i {
+    color: white;
+    font-size: 25px;
+    margin: 0 20px;
+}
+
+.hero {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.hero_img {
+    width: 30%;
+    margin: auto 5%;
+}
+
+.hero_img img {
+    width: 100%;
+    border: 2px solid orange;
+}
+
+.hero_texts {
+    width: 60%;
+    margin: auto;
+    padding-right: 5%;
+    color: orange;
+    text-shadow: 2px 2px black;
+}
+
+.hero_texts button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(252, 186, 62);
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+
+.founder{
+    background-color: #d0e8cc;
+}
+.founder h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+}
+.founder_info{
+    display: flex;
+}
+.founder_txt{
+    width: 60%;
+}
+.founder_img{
+    width: 30%;
+}
+.founder_txt h3{
+    text-align: justify;
+    padding: 10px 10%;
+    margin: 10% 0;
+}
+.founder_img img{
+    width: 100%;
+    /* height: 80%; */
+    margin: auto;
+    padding: 10px 10%;
+}
+
+
+.why{
+    background-color: #FFD700;
+    padding: 30px;
+}
+.why h1{
+    text-align: center;
+}
+.why_icon{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.why_icon img{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+.delivery{
+    width: 20%;
+}
+.veg{
+    width: 20%;
+}
+.cash{
+    width: 20%;
+}
+.quality{
+    width: 20%;
+}
+.handmade{
+    width: 20%;    
+}
+
+.timeout{
+    background-color: grey;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+.timeout #timer{
+    color:red; 
+    text-align: center; 
+    font-weight:bold; 
+    font-size: 90px; 
+    margin-top: 20px;
+    text-shadow: 2px 2px black;
+}
+.timeout button{
+    width: 40%;
+    padding: 12px;
+    background-color: rgb(252, 186, 62);
+    cursor: pointer;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.cta{
+    background-color: rgb(255, 230, 106);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.cta_text {
+    width: 70%;
+    padding: 10px 5%;
+    border-right: 1px solid black;
+}
+.cta_text ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+.cta_text ol li {
+    margin-bottom: 8px;
+}
+.cta_btn{
+    width: 30%;
+    padding: 5%;
+    margin: auto;
+}
+.cta_btn button{
+    width: 40%;
+    padding: 7px 12px;
+    background-color: rgb(245, 168, 26);
+    cursor: pointer;
+    margin: 20px 0;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 7px;
+}
+
+.footer i{
+    font-size: 20px;
+    margin: 0 5px;
+}
